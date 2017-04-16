@@ -4,6 +4,8 @@
   "description": "React application built with the help of webpack.",
   "main": "app.js",
   "scripts": {
+    "build": "webpack",
+    "dev": "npm run build && ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base src --inline --hot",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Campbell Rehu",
