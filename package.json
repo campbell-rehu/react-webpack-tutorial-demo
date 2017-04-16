@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "build": "webpack",
-    "dev": "npm run build && ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base src --inline --hot",
+    "dev": "npm run build && webpack-dev-server --content-base src --inline --hot",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Campbell Rehu",
