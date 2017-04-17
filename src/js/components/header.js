@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { NavLink } from 'react-router-dom';
 
+import NavbarContent from './navbarcontent';
+
 export default class Header extends React.Component {
     render() {
         return (
@@ -14,27 +16,9 @@ export default class Header extends React.Component {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">React/Webpack Tutorial Demo</a>
+                    <NavLink class="navbar navbar-brand" to="/">React/Webpack Tutorial Demo</NavLink>
                 </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <NavLink exact activeClassName="active" to="/">
-                                Home
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink exact activeClassName="active" to="/About">
-                                About
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink exact activeClassName="active" to="/Contact">
-                                Contact
-                            </NavLink>
-                        </li>
-                    </ul>
-                </div>
+                <NavbarContent />
                 </div>
             </nav>
         );
