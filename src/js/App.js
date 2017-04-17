@@ -5,18 +5,17 @@ import Header from './components/header';
 import Home from './components/home';
 import About from './components/about';
 import Contact from './components/contact';
+import Routes from './components/routes';
 
 class App extends React.Component {
     render() {
         return (
-            <Router>
-                <div>
-                    <Header />
-                    <Route exact path="/" component={ Home } />
-                    <Route path="/About" component={ About } />
-                    <Route path="/Contact" component={ Contact } />                    
-                </div>
-            </Router>
+                <Router>
+                    <div>
+                        <Header />
+                        <Routes />
+                    </div>               
+                </Router>
         );
     }
 }
